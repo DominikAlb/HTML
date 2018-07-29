@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>test</title>
+    <link href="arkusz.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div id="search">
+        <script>
+            (function() {
+                var cx = '004635086161101178677:ga1d8cue7bm';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+    <div id="kontener">
+        <ul id="menu">
+            <li><a href="#"><strong>Home</strong></a></li>
+            <li><a href="https://github.com/piesFM"><strong>Portfolio</strong></a>
+            <ul>
+                <li><a href="#"><strong>Strony www</strong></a></li>
+            </ul>
+            </li>
+            <li><a href="#"><strong>Informacje</strong></a>
+            <ul>
+                <li><a href="#"><strong>O mnie</strong></a></li>
+            </ul>
+            </li>
+            <li><a href="#"><strong>Kontakt</strong></a>
+            <ul>
+            <li><a href="#"><strong>Formularz kontaktowy</strong></a></li>
+            <li><a href="#"><strong>Mapa</strong></a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="buttons">
+        <h2>Hero Creator</h2>
+        <label> Name: </label><input id="name" value="test" type="text" ng-model="firstName"><br>
+        <label> Lvl: </label><input id="lvl" value="0" type="number" ng-model="lvlHero" width="20"><br>
+        <label> Budget: </label><input id="$" value="0" type="number" ng-model="bugdetHero"><br>
+        <p id="buttonOn"></p>
+        <button onclick="addElement()">
+            Add
+        </button>
+        <button onclick="deleteElement()">
+            Delete
+        </button>
+    </div>
+    <a href="customers_sql.php">run php</a>
+    <script>
+        document.getElementById("buttonOn").addEventListener("click", addElement);
+        function addElement() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("lvl").value;
+            var z = document.getElementById("$").value;
+            if (y > 0 && z > 0 && x.toString().length > 0)
+                document.getElementById("buttonOn").innerHTML = x + " " + y + " " + z;
+            else
+                alert("#value must be greater than 0\n#length of name must be greater than 0");
+        }
+    </script>
+</body>
+</html>

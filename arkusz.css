@@ -1,0 +1,94 @@
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background: whitesmoke;
+}
+#search {
+    margin: 0 auto;
+}
+#kontener {
+    margin: 0 auto;
+}
+#menu {
+    display: table; 
+    width: 100%;
+    padding: 0 15px 0; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    font-size: 16px; 
+    background: #242424;
+}
+#menu li {
+    list-style-type: none; 
+    margin: 0 auto; 
+    float: left; 
+}
+#menu li:hover {
+    background: #404040;
+}
+#menu li a {
+    display: block; 
+    color: silver; 
+    text-decoration: none; 
+    padding: 7px 15px 7px;
+}
+#menu li a:hover {
+    background: #404040; 
+    color: white;
+}
+#menu li li a {
+    width: 200px;
+}
+#menu li ul {
+    overflow: hidden; 
+    display: none; 
+    background: #242424;
+}
+#menu li:hover ul {
+    position: absolute; 
+    padding: 0; 
+    display: block; 
+    width: 200px;
+}
+#menu *:hover {
+    transition: 0.3s ease-in;
+}
+#menu li ul {
+    border-radius: 0 0 3px 3px;
+}
+#buttons h2 {
+    size: 20px;
+    color: #323232;
+    padding: 5px 30px 5px;
+}
+#buttons h2:hover {
+    color: black;
+}
+#buttons label {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+#buttons button {
+    background: linear-gradient(lightgrey, darkgrey);
+    transition: 0.5s ease-in;
+    color: black;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+#buttons button:hover {
+    background: linear-gradient(#242424, #323232);
+    color: whitesmoke;
+}
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
