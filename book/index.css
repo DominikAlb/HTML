@@ -1,0 +1,100 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(#f4f4f4, #f6f6f6);
+}
+.top, .menu {
+    max-width: 1320px;
+    margin: 0 auto;
+
+}
+.BiuroKarier, .menu {
+    margin: 0 auto;
+    padding: 0 5px 0;
+    display: table;
+    width: 100%;
+    background: #294d8f;
+    overflow: hidden; 
+    font-size: 16px; 
+}
+.BiuroKarier a {
+    display: block; 
+    color: silver; 
+    text-decoration: none; 
+    padding: 5px 30px 7px;
+}
+.headerTopBar {
+    font-weight: 500;
+    line-height: 5;
+    float: right;
+    
+    border-left: 1px solid darkblue;
+    border-right: 1px solid darkblue;
+}
+.headerTopBar a:hover {
+    background: #1c3b79;
+}
+#dark a:hover, #dark ul, #dark li {
+    background:  #5c5c5c;
+}
+.facultyJob {
+    margin: 0px;
+    display: inline-block;
+    max-width: 900px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.menu {
+    background: whitesmoke;
+}
+.menu ul li{
+    list-style-type: none; 
+    margin: 0 auto; 
+    float: left; 
+}
+.menu ul li:hover {
+    background: #294d8f;
+}
+.menu h1 {
+    position: absolute !important; 
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.menu li a {
+    display: block; 
+    color: black; 
+    text-decoration: none; 
+    padding: 7px 15px 7px;
+}
+.menu li a:hover {
+    background: #294d8f; 
+    color: white;
+}
+.menu li li a {
+    width: 200px;
+    color: silver; 
+}
+.menu li ul {
+    overflow: hidden; 
+    display: none; 
+    background: #294d8f;
+}
+.menu li:hover ul {
+    position: absolute; 
+    padding: 0; 
+    display: block; 
+    width: 200px;
+}
+.menu *:hover {
+    transition: 0.3s ease-in;
+}
+.menu li ul {
+    border-radius: 0 0 3px 3px;
+}
