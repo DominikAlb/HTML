@@ -1,0 +1,67 @@
+.button,  input[type="submit"] {
+    display: table;
+    color: #34495e;
+    background-color: #f4f6f7;
+    border: 1px solid #bdc3c7;
+    padding: 0 1.0rem;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+.holder{
+    margin: 0 auto;
+    max-width: 460px;
+    border: 2px lightgray solid;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 15px 5px 15px;
+    overflow: hidden;
+    background: linear-gradient(#ebeaea, #f8f8f8);
+    border-radius: 5px;
+}
+.holder a, .holder h3, .own-content.rightzone h3 {
+    text-align: center;
+    color: #34495e;
+}
+#input-addURL, button.submit, .button.submit, input[type="submit"], p a {
+    border: 2px solid #bababa;
+    font-size: 16px;
+    padding-left: 45px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-shadow: 0px 10px 5px -9px rgba(0,0,0,0.25);
+    background: url(img/338709d30fdb7a7416a4545201438d1d.png) no-repeat left -5px center;
+    background-size: 15%;
+    width: 88%;
+    border-radius: 8px;
+}
+fieldset {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+button.submit, .button.submit, input[type="submit"], p a {
+    color: #ebebeb;
+    background: #0c469e;
+    border: 1px solid #3b6f92;
+    padding: 0 16px;
+    width: 98%;
+    height: 55px;
+    text-decoration: none;
+    font-size: 22px;
+    font-display: initial;
+    font-style: inherit;
+    font-family: sans-serif;
+}
+input[type="submit"]:hover, p a:hover {
+    background: #127fc7;
+    color: #fff;
+}
+p a {
+    box-shadow: 0px 10px 5px -9px rgba(0,0,0,0.25);
+    color: #111;
+    text-shadow: 0 1px rgba(255,255,255,.85);
+    width: 91%;
+    position: relative;
+    text-decoration: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dodaj znalezisko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dodajZnalezisko.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="contrast.js"></script>
+    <script src="addRect.js"></script>
+    <script> 
+        $(function(){
+            $("#mainMenu").load("nav.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="mainMenu"></div>
+    <div class="holder">
+        <div>
+        <div>
+            <div class="image-hold"><img src="img/image-newadd-link.png" alt=""></div>
+            <h3>Dodaj link do swojego znaleziska i podziel się nim z innymi.</h3>
+            <fieldset class="nospace">			
+                <input id="input-addURL" type="text" placeholder="wklej dodawany adres URL" value="">
+            </fieldset>
+            <fieldset class="row buttons nospace">		
+                <p>
+                    <input type="submit" value="Dodaj znalezisko z sieci">
+                </p>						
+            </fieldset>      
+        </div>
+    </div>
+    <div class="own-content rightzone">
+        <div class="image-hold"><img src="img/image-newadd-own.png" alt=""></div>
+        <h3>Chcesz dodać nowy artykuł?</h3>
+        <div>
+            <p>
+                <a class="button m-set-fullwidth" href="https://www.wykop.pl/dodaj/owncontent/" title="dodaj treść">Napisz artykuł</a>
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
