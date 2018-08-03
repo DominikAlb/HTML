@@ -2,12 +2,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(#f4f4f4, #f6f6f6);
 }
-.top, .menu {
+.top, .menu, .wypok {
     max-width: 1320px;
     margin: 0 auto;
 
 }
-.BiuroKarier, .menu {
+.BiuroKarier, .menu, .wypok {
     margin: 0 auto;
     padding: 0 5px 0;
     display: table;
@@ -50,10 +50,10 @@ h1 {
     -webkit-margin-end: 0px;
     font-weight: bold;
 }
-.menu {
+.menu, .wypok {
     background: whitesmoke;
 }
-.menu ul li{
+.menu ul li, .wypok ul li{
     list-style-type: none; 
     margin: 0 auto; 
     float: left; 
@@ -67,7 +67,7 @@ h1 {
     width: 1px;
     overflow: hidden;
 }
-.menu li a {
+.menu li a, .wypok li a {
     display: block; 
     color: black; 
     text-decoration: none; 
@@ -81,7 +81,7 @@ h1 {
     width: 200px;
     color: silver; 
 }
-.menu li ul {
+.menu li ul, .wypok li ul {
     overflow: hidden; 
     display: none; 
     background: #294d8f;
@@ -95,6 +95,33 @@ h1 {
 .menu *:hover {
     transition: 0.3s ease-in;
 }
-.menu li ul {
+.menu li ul, .wypok li ul {
     border-radius: 0 0 3px 3px;
+}
+.menu {
+    display: block;
+}
+.wypok {
+    max-width: 800px;
+    margin: 0% auto;
+    color: #c0c0c0;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+.wypok ul {
+    padding: 0%;
+}
+.strong {
+    background: #2e56a1;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 700px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 4px;
+    border-style: initial;
+    border-width: 2px;
+    border-color: #838383;
+    margin-bottom: 5px;
 }

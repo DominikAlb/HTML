@@ -19,6 +19,7 @@
 <body>
     <div id="mainMenu"></div>
     <div class="wypok">
+        <?php include("showAccount.php"); ?>
     </div>
 </body>
 </html>

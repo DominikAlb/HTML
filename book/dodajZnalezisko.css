@@ -32,7 +32,7 @@
     box-shadow: 0px 10px 5px -9px rgba(0,0,0,0.25);
     background: url(img/338709d30fdb7a7416a4545201438d1d.png) no-repeat left -5px center;
     background-size: 15%;
-    width: 88%;
+    width: 94%;
     border-radius: 8px;
 }
 fieldset {
@@ -45,7 +45,7 @@ button.submit, .button.submit, input[type="submit"], p a {
     background: #0c469e;
     border: 1px solid #3b6f92;
     padding: 0 16px;
-    width: 98%;
+    width: 99%;
     height: 55px;
     text-decoration: none;
     font-size: 22px;
@@ -61,7 +61,7 @@ p a {
     box-shadow: 0px 10px 5px -9px rgba(0,0,0,0.25);
     color: #111;
     text-shadow: 0 1px rgba(255,255,255,.85);
-    width: 91%;
+    width: 95%;
     position: relative;
     text-decoration: none;
 }

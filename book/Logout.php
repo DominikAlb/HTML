@@ -3,5 +3,5 @@
    unset($_SESSION["username"]);
    unset($_SESSION["loggedin"]);
    session_destroy();
-   header("Location: index.html");
+   header("Location: index.php");
 ?>

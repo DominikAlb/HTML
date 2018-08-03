@@ -1,3 +1,17 @@
+<?php
+    include("Config.php");
+    try {
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["commit"])) {
+        $url = $_POST["url"];
+        $sql = $db->prepare('INSERT INTO link(url, description) VALUES (:url , "No description")');
+        $sql->bindParam(':url', $url);
+        $sql->execute();
+        header("location: index.php");
+    }
+    } catch(PDOExepction $e) {
+        $e->getMessage();
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,34 +33,27 @@
 </head>
 <body>
     <div id="mainMenu"></div>
-    <form action="addYourLink.php" method="POST" name="form">
+    <form action="" method="POST" name="form">
         <div class="holder">
             <div>
             <div>
-                <div class="image-hold"><img src="img/image-newadd-link.png" alt=""></div>
-                <h3>Dodaj link do swojego znaleziska i podziel się nim z innymi.</h3>
+                <h3>Edytuj swój link.</h3>
                 <fieldset class="nospace">			
-                    <input name="url" id="input-addURL" type="text" placeholder="wklej dodawany adres URL" value="" required>
+                    <input name="header" id="header" type="text" name="header" placeholder="Dodaj tytuł" value="" required>
+                </fieldset>
+                <fieldset class="nospace">			
+                    <input name="description" id="description" type="text" name="description" placeholder="Dodaj krótki wstęp" value="" required>
+                </fieldset>
+                <fieldset>
+                    <input type="file" name="pic" accept="image/*">
                 </fieldset>
                 <fieldset class="row buttons nospace">		
                     <p>
-                        <input type="submit" name="commit">
+                        <input type="submit" name="commit" value="dodaj">
                     </p>						
                 </fieldset>      
             </div>
         </div>
-    </form>
-    <form action="addArticle.php" method="POST">
-    <div class="own-content rightzone">
-        <div class="image-hold"><img src="img/image-newadd-own.png" alt=""></div>
-        <h3>Chcesz dodać nowy artykuł?</h3>
-        <div>
-            <p>
-                <a class="button m-set-fullwidth" href="" title="dodaj treść">Napisz artykuł</a>
-            </p>
-        </div>
-    </div>
-    </div>
     </form>
 </body>
 </html>
